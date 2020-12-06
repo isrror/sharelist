@@ -26,8 +26,4 @@ then
   yum install -y nodejs >/dev/null 2>&1
 fi
 
-pm2 start app.js --name sharelist --env prod
-pm2 save
-pm2 startup
-
 echo -e "|\n|   Success: ShareList has been installed\n|"
