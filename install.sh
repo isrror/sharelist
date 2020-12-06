@@ -26,9 +26,6 @@ then
   yum install -y nodejs >/dev/null 2>&1
 fi
 
-npm install
-npm install pm2 -g
-
 pm2 start app.js --name sharelist --env prod
 pm2 save
 pm2 startup
